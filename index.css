@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+#{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box ;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body { 
+    font-family: 'Poppins', sans-serif;
+    background-color: brown;
+}
+
+.container {
+    max-width: 1200px ;
+    margin: 0 auto ;
+}
+
+
+.header {
+    background-image:linear-gradient{
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) },
+        url(images/bg.jpg);
+    background-position: center center ;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    display: flex;
+    align-items: centers ;
+    min-height: 70vh;
+}
+
+.menu{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.logo{
+    color: antiquewhite;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color:antiquewhite;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: ef35200;
+}
+
+#menu{
+    display: none;    
+}
+
+.menu.icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top:100%;
+    z-index: 1;
+    background-color: 4e4b5076;
+    padding: 20px;
+    min-width: 400px; 
+}
+
+table{
+    width: 100%;
+}
+
+th, td {
+    color:antiquewhite;
+}
+
+.borrar {
+    background-color: orangered;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color:antiquewhite;
+    font-weight: 300;
+}
+
+.header-txt {
+    padding: 200px;
+    text-align: center;
+}
+
+.header-txt h1 {
+    font-size: 70px;
+    line-height: 80px;
+    color:antiquewhite;
+    margin-bottom: 20px;
+}
+
+.header .txt p {
+    font-size: 16px;
+    color:grey;
+    margin-bottom: 20px;
+}
+
+.btn-1 {
+    display:inline-block;
+    background-color: orangered;
+    color:antiquewhite;
+    padding: 13px 35px;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.btn-1.hover{
+    background-color: orangered;
+}
+
+.icons {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.icons img {
+    width: 30px;
+}
+
+.products {
+    padding: 70px 0 0 0;
+    text-align: center;
+}
+
+h2 {
+    color:antiquewhite;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.products-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+}
+
+.product img {
+    width: 250px;
+} 
+
+.product h3 {
+    font-size: 20px;
+    color: antiquewhite;
+    margin-bottom: 16px;
+}
+
+.product p {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.precio {
+    color: orangered !important;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 8px 17px;
+    border: 1px solid orangered;
+    border-radius: 20px;
+    color:antiquewhite;
+}
+
+.btn2.hover {
+    background-color: orangered;
+}
+
+.services{
+    margin-top: 100px;
+    padding: 70px 0;
+    background-color: aqua;
+    text-align: center;
+}
+
+.services h2 {
+    color:grey;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 35px;
+}
+
+.services {
+    background-color: antiquewhite;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding:35px;
+    text-align: left;    
+}
+
+.service h3 {
+    font-size: 20px;
+    color:black;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 100px;
+    border: 20px solid orangered;
+}
+
+.service p{
+    font-size: 16px;
+    color: e575757;
+    margin-top: 15px;
+}
+
+.footer {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    color: antiquewhite;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+.link a :hover{
+    color: orangered;
+}
+
+
+
+@media(max-width: 991px){
+
+    .menu{
+        padding: 26px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: grey;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .submenu:hover #carrito {
+        min-width: 100%;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header.content {
+        padding: 100px 30px;
+    }
+
+    .header-txt {
+        padding: 0;
+    }
+
+    .products {
+        padding: 30px;
+    }
+
+    .products-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .services{
+        padding: 30px;
+        margin: 0;
+    }
+
+    .services-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
